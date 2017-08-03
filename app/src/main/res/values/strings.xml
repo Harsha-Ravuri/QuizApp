@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HarshaStartOverApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="edit_message">enter a message</string>
+    <string name="button_send">Send!</string>
+    <string name="buttton2_send">Send2!</string>
+    <string name="edit2_message">start service</string>
+    <string name="AddQuestion">Add a question!</string>
+    <string name="title_activity_add_aquestion">AddAQuestion</string>
+    <string name="title_activity_show_all_records">showAllRecords</string>
+</resources>
