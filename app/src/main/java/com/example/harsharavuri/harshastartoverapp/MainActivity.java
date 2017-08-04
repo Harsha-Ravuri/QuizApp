@@ -139,7 +139,7 @@ public class MainActivity extends Activity implements Serializable { //AppCompat
             answerChoices.add(qa.getChoice2().getChoice());
             answerChoices.add(qa.getChoice3().getChoice());
 
-            Collections.shuffle(answerChoices);
+            //Collections.shuffle(answerChoices);
 
             thisSet.add(0,qa.getQuestion());
 
