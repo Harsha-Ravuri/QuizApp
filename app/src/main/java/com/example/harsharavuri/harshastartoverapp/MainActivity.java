@@ -121,6 +121,10 @@ public class MainActivity extends Activity implements Serializable { //AppCompat
         //locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 0, (android.location.LocationListener) locationListener);
     }
 
+    public void deleteAllRecords(View view){
+        db.deleteAllRecords();
+    }
+
 
     /**
      * Called when the user taps the Send button

@@ -39,7 +39,7 @@ public class QuizDatabaseHelper extends SQLiteOpenHelper implements Serializable
                     COLUMN5 + " TEXT, " +
                     KEY_DEFINITION + " ("+ COLUMN1 + "));";
 
-    private static final String DICTIONARY_TABLE_DELETE = "DELETE FROM "+DICTIONARY_TABLE_NAME + " ;";
+    private static final String DICTIONARY_TABLE_DELETE = "DELETE FROM "+DICTIONARY_TABLE_NAME+ " ;";
 
     QuizDatabaseHelper(Context context) {
 
@@ -48,13 +48,15 @@ public class QuizDatabaseHelper extends SQLiteOpenHelper implements Serializable
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        //db.execSQL("DROP TABLE IF EXISTS " + DICTIONARY_TABLE_NAME);
-        db.execSQL(DICTIONARY_TABLE_CREATE);
+        db.execSQL("DROP TABLE IF EXISTS " + DICTIONARY_TABLE_NAME);
+        //db.execSQL(DICTIONARY_TABLE_CREATE);
     }
 
     public void deleteAllRecords(){
         SQLiteDatabase db = this.getWritableDatabase();
+        //db.delete(DICTIONARY_TABLE_NAME,"",columns);
         db.execSQL(DICTIONARY_TABLE_DELETE);
+        db.close();
     }
 
     @Override
